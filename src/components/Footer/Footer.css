@@ -1,0 +1,35 @@
+.footer {
+  background: #0b5e55;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 70px 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer li {
+  line-height: 2;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,.2);
+}

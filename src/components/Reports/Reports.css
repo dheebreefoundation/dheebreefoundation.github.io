@@ -1,0 +1,44 @@
+.reports {
+  padding: 100px 40px;
+  background: #f8fafc;
+}
+
+.reports-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.reports h2 {
+  text-align: center;
+  color: #0b5e55;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.reports-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.report-card {
+  width: 350px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.report-card button {
+  margin-top: 20px;
+
+  background: #0b5e55;
+  color: white;
+
+  border: none;
+  padding: 12px 25px;
+
+  border-radius: 8px;
+  cursor: pointer;
+}

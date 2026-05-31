@@ -5,6 +5,9 @@ import Mission from "./components/Mission/Mission";
 import FocusAreas from "./components/FocusAreas/FocusAreas";
 import Impact from "./components/Impact/Impact";
 import Gallery from "./components/Gallery/Gallery";
+import Programs from "./components/Programs/Programs";
+import Reports from "./components/Reports/Reports";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -15,6 +18,9 @@ function App() {
       <FocusAreas />
       <Impact />
       <Gallery />
+      <Programs />
+      <Reports />
+      <Footer />
     </>
   );
 }
