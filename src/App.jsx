@@ -1,9 +1,16 @@
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
-    <div style={{ padding: "50px", textAlign: "center" }}>
-      <h1>Dheebree Foundation</h1>
-      <h3>Transforming Rural Communities Through Education & Innovation</h3>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Footer />
+    </>
   );
 }
 
