@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-container">
         <h2>About Dheebree Foundation</h2>
 

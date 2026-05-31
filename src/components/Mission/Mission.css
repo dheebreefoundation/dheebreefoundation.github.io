@@ -45,3 +45,7 @@
   color: #555;
   font-size: 17px;
 }
+.mission-card:hover,
+.vision-card:hover {
+  transform: translateY(-8px);
+}
