@@ -1,0 +1,51 @@
+.focus {
+  padding: 100px 40px;
+  background: #ffffff;
+}
+
+.focus-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.focus h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #0b5e55;
+  margin-bottom: 60px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.focus-card {
+  background: #f8fafc;
+  padding: 40px;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.focus-card:hover {
+  transform: translateY(-5px);
+}
+
+.focus-card h3 {
+  color: #0b5e55;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.focus-card p {
+  color: #555;
+  line-height: 1.8;
+}
+
+@media(max-width:768px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
