@@ -23,8 +23,9 @@ import {
   FaUsers,
   FaBars,
   FaTimes,
+  FaArrowUp,
 } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function Hero() {
   const slides = [
     hero,
@@ -38,19 +39,36 @@ function Hero() {
     gallery8,
   ];
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTopBtn(window.scrollY > 600);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       {/* HERO + NAVBAR */}
 
-      <section className="heroSection">
+      <section id="top" className="heroSection">
         <div className="topBar">
           <div className="leftInfo">
             <span>
-              <FaPhoneAlt /> +91 7301529927
+              <FaPhoneAlt color="#fff" /> +91 7301529927
             </span>
 
             <span>
-              <FaWhatsapp /> +91 7301529927
+              <FaWhatsapp color="#fff" /> +91 7301529927
             </span>
           </div>
 
@@ -88,8 +106,9 @@ function Hero() {
         </nav>
         <Swiper
           modules={[Autoplay, Pagination]}
+          speed={1800}
           autoplay={{
-            delay: 3500,
+            delay: 4500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -140,19 +159,19 @@ function Hero() {
       {/* IMPACT STRIP */}
 
       <section className="impactStrip">
-        <div className="heroImpactCard">
+        <div className="impactItem">
           <h3>100+</h3>
           <p>Villages Reached</p>
         </div>
-        <div className="heroImpactCard">
+        <div className="impactItem">
           <h3>50+</h3>
           <p>Programs</p>
         </div>
-        <div className="heroImpactCard">
+        <div className="impactItem">
           <h3>5000+</h3>
           <p>Beneficiaries Impacted</p>
         </div>
-        <div className="heroImpactCard">
+        <div className="impactItem">
           <h3>20+</h3>
           <p>Partners</p>
         </div>
@@ -406,6 +425,11 @@ function Hero() {
       <a href="tel:+917301529927" className="callFloat">
         <FaPhoneAlt />
       </a>
+      {showTopBtn && (
+        <button className="scrollTop" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )}
       <footer className="footer">
         <div className="container">
           <div className="footerGrid">
