@@ -932,3 +932,85 @@ img{
 
   z-index:99999;
 }
+/* DESKTOP IMPROVEMENTS */
+
+@media (min-width:769px){
+
+  /* Footer bullets remove */
+
+  .footer ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+
+  .footer li{
+    margin-bottom:10px;
+  }
+
+  /* CTA */
+
+  .ctaSection{
+    padding:120px 20px;
+  }
+
+  .ctaSection h2{
+    font-size:52px;
+    margin-bottom:20px;
+  }
+
+  .ctaSection p{
+    font-size:20px;
+    margin-bottom:30px;
+  }
+
+  /* Reports */
+
+  .reportCard{
+    transition:.3s;
+  }
+
+  .reportCard:hover{
+    transform:translateY(-6px);
+  }
+
+  .reportCard button{
+    margin-top:15px;
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    background:#0b5e55;
+    color:#fff;
+    cursor:pointer;
+  }
+
+  /* Featured Initiative */
+
+  .initiativeGrid{
+    gap:90px;
+  }
+
+  .initiativeContent h2{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:20px;
+  }
+
+  .initiativeContent li{
+    margin-bottom:10px;
+  }
+
+  /* Focus cards */
+
+  .focusCard{
+    transition:.3s;
+  }
+
+  .focusCard:hover{
+    transform:translateY(-8px);
+  }
+
+}
+.footer ul{
+  list-style:none;
+}
