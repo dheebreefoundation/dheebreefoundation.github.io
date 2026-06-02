@@ -12,6 +12,11 @@ import gallery5 from "../../assets/images/gallery5.jpg";
 import gallery6 from "../../assets/images/gallery6.jpg";
 import gallery7 from "../../assets/images/gallery7.jpg";
 import gallery8 from "../../assets/images/gallery8.jpg";
+import vikramImg from "../../assets/images/vikram.jpg";
+import sarikaImg from "../../assets/images/sarika.jpg";
+import rajeevImg from "../../assets/images/rajeev.jpg";
+import raushanImg from "../../assets/images/raushan.jpg";
+import logo from "../../assets/images/logo.jpg";
 import {
   FaPhoneAlt,
   FaWhatsapp,
@@ -64,11 +69,11 @@ function Hero() {
         <div className="topBar">
           <div className="leftInfo">
             <span>
-              <FaPhoneAlt color="#fff" /> +91 7301529927
+              <FaPhoneAlt color="#fff" /> +91 6205745558
             </span>
 
             <span>
-              <FaWhatsapp color="#fff" /> +91 7301529927
+              <FaWhatsapp color="#fff" /> +91 6205745558
             </span>
           </div>
 
@@ -86,7 +91,9 @@ function Hero() {
           </div>
         </div>
         <nav className="topNavbar">
-          <div className="logo">DHEEBREE FOUNDATION</div>
+          <div className="logo">
+            <img src={logo} alt="" />
+          </div>
 
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FaTimes /> : <FaBars />}
@@ -282,8 +289,46 @@ function Hero() {
           </div>
         </div>
       </section>
-      {/* FEATURED INITIATIVE */}
 
+      <section id="team" className="teamSection">
+        <div className="container">
+          <div className="sectionHeader">
+            <span>LEADERSHIP TEAM</span>
+            <h2>Meet Our Team</h2>
+          </div>
+
+          <div className="teamGrid">
+            <div className="teamCard">
+              <img src={vikramImg} alt="A. Vikram" />
+              <h3>A. Vikram</h3>
+              <p>Co-Founder & Manager – Program Integration</p>
+              <span>NIFT Graduate</span>
+            </div>
+
+            <div className="teamCard">
+              <img src={sarikaImg} alt="Sarika Sinha" />
+              <h3>Sarika Sinha</h3>
+              <p>Co-Founder & Learning Management</p>
+              <span>NIFT Graduate</span>
+            </div>
+
+            <div className="teamCard">
+              <img src={rajeevImg} alt="Rajeev Kumar Singh" />
+              <h3>Rajeev Kumar Singh</h3>
+              <p>Program Collaborations</p>
+              <span>TISS - Rural Development</span>
+            </div>
+
+            <div className="teamCard">
+              <img src={raushanImg} alt="Raushan Singh Chauhan" />
+              <h3>Raushan Singh Chauhan</h3>
+              <p>Enterprise & Value Chain Development</p>
+              <span>IRMA - PGDRM</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* FEATURED INITIATIVE */}
       <section id="initiative" className="initiativeSection">
         <div className="container">
           <div className="initiativeGrid">
@@ -418,11 +463,11 @@ function Hero() {
       </section>
 
       {/* FOOTER */}
-      <a href="https://wa.me/7301529927" className="whatsappFloat">
+      <a href="https://wa.me/6205745558" className="whatsappFloat">
         <FaWhatsapp />
       </a>
 
-      <a href="tel:+917301529927" className="callFloat">
+      <a href="tel:+916205745558" className="callFloat">
         <FaPhoneAlt />
       </a>
       {showTopBtn && (
@@ -434,12 +479,20 @@ function Hero() {
         <div className="container">
           <div className="footerGrid">
             <div>
+              <img
+                src={logo}
+                alt="Dheebree Foundation"
+                className="footerLogo"
+              />
               <h3>Dheebree Foundation</h3>
 
               <p>
                 Strengthening Regional Ecosystems Through Evidence-Based
                 Development.
               </p>
+              <a href="mailto:connect@dheebree.org.in" className="emailLink">
+                connect@dheebree.org.in
+              </a>
             </div>
 
             <div>
@@ -456,7 +509,7 @@ function Hero() {
             <div>
               <h4>Contact</h4>
 
-              <p>info@dheebree.org</p>
+              <p>connect@dheebree.org.in</p>
 
               <p>Bihar, India</p>
             </div>
